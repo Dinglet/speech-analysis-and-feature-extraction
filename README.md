@@ -6,16 +6,16 @@ In this homework, I follow [the Jupyter notebook provided by the course instruct
 
 ## Speech Analysis and Feature Extraction
 
-Instead of using the audio from the `get_audio` function, I load my 5-second voice `mono.wav`, which I record when doing homework 1, and do the following analysis and feature extraction.
+Instead of using the audio from the `get_audio` function, I load my 5-second voice `mono.wav`, which I record when doing homework 1, and do the following analysis and feature extraction with either *librosa* or *Parselmouth*.
 
-- Viewing the waveform
-- Viewing the spectrogram
-- Pitch tracking
-- Resampling
-- Viewing the narrowband and the wideband spectrograms
-- Plotting pitch contour
-- Viewing the mel spectrogram
-- Extracting MFCCs
+- Viewing the waveform (*librosa*)
+- Viewing the spectrogram (*librosa*)
+- Pitch tracking (*librosa*)
+- Resampling (*librosa*)
+- Viewing the narrowband and the wideband spectrograms (*librosa*)
+- Plotting pitch contour (*Parselmouth*)
+- Viewing the mel spectrogram (*librosa*)
+- Extracting MFCCs (*librosa*)
 
 In addition, time-stretching and pitch-shifting appear in this homework again. This time, the pitch contours of the original and the resultant audio are plotted on the spectrograms.
 
@@ -63,10 +63,26 @@ Figure. The narrowband and wideband spectrograms.
 
 ### Pitch Contour
 
+![The spectrogram of my voice with a pitch contour.](figure/pitch%20contour.png)
+
+Figure. The spectrogram of my voice with a pitch contour.
+
 ### Mel-Scaled Spectrogram
+
+![The linear and mel scale spectrograms of my voice.](figure/linear%20and%20mel%20power%20spectrogram.png)
+
+Figure. The linear and mel scale spectrograms of my voice.
 
 ### MFCCs
 
+![MFCCs of my voice.](figure/MFCCs.png)
+
+Figure. MFCCs of my voice.
+
 ## Time-Stretching and Pitch-Shifting
 
-I have used Rubber Band to time-stretch and pitch-shift an audio in homework 1.
+I have used Rubber Band to time-stretch and pitch-shift an audio in homework 1, and here I use it again and then plot spectrograms and pitch contours for both original and resultant audio.
+
+![The spectrograms of my voice and Rubber-Banded voice with pitch contours.](figure/Rubber%20Band%20spectrograms.png)
+
+Figure. The spectrograms of my voice and Rubber-Banded voice with pitch contours.
